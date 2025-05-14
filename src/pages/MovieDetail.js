@@ -23,7 +23,7 @@ export const MovieDetail = () => {
       setMovie(json);
     }
     fetchMovie();
-  }, []);
+  }, [params.id]);
 
   const imageSrc = movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : Backup;
   return (
