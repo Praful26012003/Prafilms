@@ -1,0 +1,100 @@
+api key = 915a9ee0925f676f8adfb7cdc18f8673
+api read-access-token = eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MTVhOWVlMDkyNWY2NzZmOGFkZmI3Y2RjMThmODY3MyIsIm5iZiI6MTc0NzEyOTU2Mi4xNDEsInN1YiI6IjY4MjMxNGRhYWZjOTY2NGQ4NTVhMmY5ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.IPHk7lPK2KwKmvbXLN1cU44PyhTM-BR80vn_X28wvIk
+
+Now Playing
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MTVhOWVlMDkyNWY2NzZmOGFkZmI3Y2RjMThmODY3MyIsIm5iZiI6MTc0NzEyOTU2Mi4xNDEsInN1YiI6IjY4MjMxNGRhYWZjOTY2NGQ4NTVhMmY5ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.IPHk7lPK2KwKmvbXLN1cU44PyhTM-BR80vn_X28wvIk'
+  }
+};
+
+fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', options)
+  .then(res => res.json())
+  .then(res => console.log(res))
+  .catch(err => console.error(err));
+
+Popular movies
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MTVhOWVlMDkyNWY2NzZmOGFkZmI3Y2RjMThmODY3MyIsIm5iZiI6MTc0NzEyOTU2Mi4xNDEsInN1YiI6IjY4MjMxNGRhYWZjOTY2NGQ4NTVhMmY5ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.IPHk7lPK2KwKmvbXLN1cU44PyhTM-BR80vn_X28wvIk'
+  }
+};
+
+fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', options)
+  .then(res => res.json())
+  .then(res => console.log(res))
+  .catch(err => console.error(err));
+
+
+Top Rated
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MTVhOWVlMDkyNWY2NzZmOGFkZmI3Y2RjMThmODY3MyIsIm5iZiI6MTc0NzEyOTU2Mi4xNDEsInN1YiI6IjY4MjMxNGRhYWZjOTY2NGQ4NTVhMmY5ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.IPHk7lPK2KwKmvbXLN1cU44PyhTM-BR80vn_X28wvIk'
+  }
+};
+
+fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', options)
+  .then(res => res.json())
+  .then(res => console.log(res))
+  .catch(err => console.error(err));
+
+
+Upcoming
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MTVhOWVlMDkyNWY2NzZmOGFkZmI3Y2RjMThmODY3MyIsIm5iZiI6MTc0NzEyOTU2Mi4xNDEsInN1YiI6IjY4MjMxNGRhYWZjOTY2NGQ4NTVhMmY5ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.IPHk7lPK2KwKmvbXLN1cU44PyhTM-BR80vn_X28wvIk'
+  }
+};
+
+fetch('https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1', options)
+  .then(res => res.json())
+  .then(res => console.log(res))
+  .catch(err => console.error(err));
+
+
+  Individual
+  const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MTVhOWVlMDkyNWY2NzZmOGFkZmI3Y2RjMThmODY3MyIsIm5iZiI6MTc0NzEyOTU2Mi4xNDEsInN1YiI6IjY4MjMxNGRhYWZjOTY2NGQ4NTVhMmY5ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.IPHk7lPK2KwKmvbXLN1cU44PyhTM-BR80vn_X28wvIk'
+  }
+};
+
+fetch('https://api.themoviedb.org/3/movie/movie_id?language=en-US', options)
+  .then(res => res.json())
+  .then(res => console.log(res))
+  .catch(err => console.error(err));
+
+Search
+const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MTVhOWVlMDkyNWY2NzZmOGFkZmI3Y2RjMThmODY3MyIsIm5iZiI6MTc0NzEyOTU2Mi4xNDEsInN1YiI6IjY4MjMxNGRhYWZjOTY2NGQ4NTVhMmY5ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.IPHk7lPK2KwKmvbXLN1cU44PyhTM-BR80vn_X28wvIk'
+  }
+};
+
+fetch('https://api.themoviedb.org/3/search/movie?query=avatar&include_adult=false&language=en-US&page=1', options)
+  .then(res => res.json())
+  .then(res => console.log(res))
+  .catch(err => console.error(err));
+
+
+
+https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1
+https://api.themoviedb.org/3/movie/popular?language=en-US&page=1
+https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1
+https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1
+
+https://api.themoviedb.org/3/movie/movie_id?language=en-US
+
+https://api.themoviedb.org/3/search/movie?query=avatar&language=en-US&page=1
