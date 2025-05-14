@@ -7,7 +7,7 @@ export const MovieDetail = () => {
   const [movie, setMovie] = useState({});
   const params = useParams();
 
-  const pageTitle = useTitle(movie.original_title);
+  useTitle(movie.original_title);
 
   useEffect(() => {
     const options = {
